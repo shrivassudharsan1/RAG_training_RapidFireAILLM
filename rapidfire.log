@@ -1,0 +1,215 @@
+2025-12-30 21:50:56 | Experiment | INFO | experiment.py:154 | [exp1-fiqa-rag-colab:Experiment] Experiment exp1-fiqa-rag-colab created with Experiment ID: 1 at /content/rapidfireai/rapidfire_experiments/exp1-fiqa-rag-colab
+2025-12-30 21:51:35 | Experiment | INFO | dispatcher.py:641 | [exp1-fiqa-rag-colab:Experiment] Started interactive control dispatcher on http://127.0.0.1:8851
+2025-12-30 21:51:35 | Experiment | INFO | dispatcher.py:642 | [exp1-fiqa-rag-colab:Experiment] Use dispatcher API to dynamically stop/resume/delete/clone pipelines
+2025-12-30 21:51:35 | waitress | INFO | wasyncore.py:449 | Serving on http://127.0.0.1:8851
+2025-12-30 21:51:37 | Experiment | INFO | experiment.py:348 | [exp1-fiqa-rag-colab:Experiment] Running multi-config experiment with 4 shard(s), (0.5 GPUs per actor, 1.0 CPUs per actor, 1 actors)
+2025-12-30 21:51:37 | Experiment | INFO | experiment.py:357 | [exp1-fiqa-rag-colab:Experiment] Reset states of existing pipelines/contexts/tasks (marked as failed)
+2025-12-30 21:51:38 | Controller | INFO | controller.py:681 | [exp1-fiqa-rag-colab:Controller] Dataset sharded into 4 shard(s). Shard sizes: [166, 166, 166, 166]
+2025-12-30 21:51:38 | Controller | INFO | controller.py:686 | [exp1-fiqa-rag-colab:Controller] Received 4 pipeline configuration(s)
+2025-12-30 21:51:38 | Controller | INFO | controller.py:198 | [exp1-fiqa-rag-colab:Controller] Found 2 unique RAG context(s)
+2025-12-30 21:51:38 | Controller | INFO | controller.py:209 | [exp1-fiqa-rag-colab:Controller] Will build new context 900a11b5...
+2025-12-30 21:51:38 | Controller | INFO | controller.py:209 | [exp1-fiqa-rag-colab:Controller] Will build new context 7e035517...
+2025-12-30 21:51:38 | Controller | INFO | controller.py:235 | [exp1-fiqa-rag-colab:Controller] Building 2 context(s) in parallel...
+2025-12-30 21:51:38 | Controller | INFO | controller.py:262 | [exp1-fiqa-rag-colab:Controller] Creating 2 DocProcessingActor(s) for parallel processing
+2025-12-30 21:51:38 | Controller | INFO | controller.py:339 | [exp1-fiqa-rag-colab:Controller] Submitted 2 build task(s) in parallel
+2025-12-30 21:52:14 | DocProcessingActor | INFO | doc_actor.py:55 | [exp1-fiqa-rag-colab:DocProcessingActor] DocProcessingActor initialized
+2025-12-30 21:52:14 | DocProcessingActor | INFO | doc_actor.py:55 | [exp1-fiqa-rag-colab:DocProcessingActor] DocProcessingActor initialized
+2025-12-30 21:52:14 | DocProcessingActor | INFO | doc_actor.py:95 | [exp1-fiqa-rag-colab:DocProcessingActor] DocProcessingActor: Starting context initialization...
+2025-12-30 21:52:14 | DocProcessingActor | INFO | doc_actor.py:101 | [exp1-fiqa-rag-colab:DocProcessingActor] Building FAISS index...
+2025-12-30 21:52:14 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 21:52:15 | DocProcessingActor | INFO | doc_actor.py:95 | [exp1-fiqa-rag-colab:DocProcessingActor] DocProcessingActor: Starting context initialization...
+2025-12-30 21:52:15 | DocProcessingActor | INFO | doc_actor.py:101 | [exp1-fiqa-rag-colab:DocProcessingActor] Building FAISS index...
+2025-12-30 21:52:15 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 21:52:37 | DocProcessingActor | INFO | doc_actor.py:103 | [exp1-fiqa-rag-colab:DocProcessingActor] FAISS index built successfully
+2025-12-30 21:52:37 | DocProcessingActor | INFO | doc_actor.py:107 | [exp1-fiqa-rag-colab:DocProcessingActor] Transferring FAISS index from GPU to CPU for serialization...
+2025-12-30 21:52:37 | DocProcessingActor | INFO | doc_actor.py:114 | [exp1-fiqa-rag-colab:DocProcessingActor] FAISS index transferred to CPU successfully
+2025-12-30 21:52:37 | DocProcessingActor | INFO | doc_actor.py:136 | [exp1-fiqa-rag-colab:DocProcessingActor] Serializing FAISS index for cross-actor sharing...
+2025-12-30 21:52:37 | DocProcessingActor | INFO | doc_actor.py:141 | [exp1-fiqa-rag-colab:DocProcessingActor] FAISS index serialized: 5588088 bytes
+2025-12-30 21:52:37 | DocProcessingActor | INFO | doc_actor.py:162 | [exp1-fiqa-rag-colab:DocProcessingActor] DocProcessingActor: Context components ready for sharing
+2025-12-30 21:52:37 | Controller | INFO | controller.py:360 | [exp1-fiqa-rag-colab:Controller] Built context 1 (900a11b5...) successfully in 59.53s
+2025-12-30 21:52:38 | DocProcessingActor | INFO | doc_actor.py:103 | [exp1-fiqa-rag-colab:DocProcessingActor] FAISS index built successfully
+2025-12-30 21:52:38 | DocProcessingActor | INFO | doc_actor.py:107 | [exp1-fiqa-rag-colab:DocProcessingActor] Transferring FAISS index from GPU to CPU for serialization...
+2025-12-30 21:52:38 | DocProcessingActor | INFO | doc_actor.py:114 | [exp1-fiqa-rag-colab:DocProcessingActor] FAISS index transferred to CPU successfully
+2025-12-30 21:52:38 | DocProcessingActor | INFO | doc_actor.py:136 | [exp1-fiqa-rag-colab:DocProcessingActor] Serializing FAISS index for cross-actor sharing...
+2025-12-30 21:52:38 | DocProcessingActor | INFO | doc_actor.py:141 | [exp1-fiqa-rag-colab:DocProcessingActor] FAISS index serialized: 4775544 bytes
+2025-12-30 21:52:38 | DocProcessingActor | INFO | doc_actor.py:162 | [exp1-fiqa-rag-colab:DocProcessingActor] DocProcessingActor: Context components ready for sharing
+2025-12-30 21:52:38 | Controller | INFO | controller.py:360 | [exp1-fiqa-rag-colab:Controller] Built context 2 (7e035517...) successfully in 59.90s
+2025-12-30 21:52:38 | Controller | INFO | controller.py:401 | [exp1-fiqa-rag-colab:Controller] Completed parallel context building for 2 context(s)
+2025-12-30 21:52:38 | Controller | INFO | controller.py:706 | [exp1-fiqa-rag-colab:Controller] Created 1 query processing actors (generic pool)
+2025-12-30 21:52:38 | Controller | INFO | controller.py:717 | [exp1-fiqa-rag-colab:Controller] Initialized scheduler with 4 pipelines, 1 actors, 4 shards
+2025-12-30 21:52:38 | Controller | INFO | controller.py:883 | [exp1-fiqa-rag-colab:Controller] Starting multi-pipeline inference scheduling...
+2025-12-30 21:52:38 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 0 (56 batches)
+2025-12-30 21:52:59 | QueryProcessingActor-0 | INFO | query_actor.py:139 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Initializing new inference engine (config hash: 2acc9e30)
+2025-12-30 21:57:24 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 21:57:24 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 21:57:24 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 21:57:25 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 21:57:25 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 21:57:25 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 21:57:25 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 22:03:29 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 1 completed shard 0 (56 batches, 363.44s)
+2025-12-30 22:03:29 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 0 (56 batches)
+2025-12-30 22:03:29 | QueryProcessingActor-0 | INFO | query_actor.py:143 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Reusing existing inference engine (config hash: 2acc9e30)
+2025-12-30 22:03:29 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 22:03:29 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 22:03:29 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 22:03:30 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 22:03:30 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 22:03:30 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 22:03:30 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 22:09:20 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 2 completed shard 0 (56 batches, 349.91s)
+2025-12-30 22:09:21 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 0 (56 batches)
+2025-12-30 22:09:21 | QueryProcessingActor-0 | INFO | query_actor.py:143 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Reusing existing inference engine (config hash: 2acc9e30)
+2025-12-30 22:09:21 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 22:09:21 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 22:09:21 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 22:09:22 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 22:09:22 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 22:09:22 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 22:09:22 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 22:13:54 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 3 completed shard 0 (56 batches, 271.84s)
+2025-12-30 22:13:54 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 0 (56 batches)
+2025-12-30 22:13:54 | QueryProcessingActor-0 | INFO | query_actor.py:143 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Reusing existing inference engine (config hash: 2acc9e30)
+2025-12-30 22:13:54 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 22:13:54 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 22:13:54 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 22:14:02 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 22:14:02 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 22:14:02 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 22:14:02 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 22:19:35 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 4 completed shard 0 (56 batches, 333.90s)
+2025-12-30 22:19:36 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 1 (56 batches)
+2025-12-30 22:19:36 | QueryProcessingActor-0 | INFO | query_actor.py:143 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Reusing existing inference engine (config hash: 2acc9e30)
+2025-12-30 22:19:36 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 22:19:36 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 22:19:36 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 22:19:37 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 22:19:37 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 22:19:37 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 22:19:37 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 22:24:12 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 1 completed shard 1 (56 batches, 274.34s)
+2025-12-30 22:24:12 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 1 (56 batches)
+2025-12-30 22:24:12 | QueryProcessingActor-0 | INFO | query_actor.py:143 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Reusing existing inference engine (config hash: 2acc9e30)
+2025-12-30 22:24:12 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 22:24:12 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 22:24:12 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 22:24:13 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 22:24:13 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 22:24:13 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 22:24:13 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 22:29:33 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 2 completed shard 1 (56 batches, 319.36s)
+2025-12-30 22:29:33 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 1 (56 batches)
+2025-12-30 22:29:33 | QueryProcessingActor-0 | INFO | query_actor.py:143 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Reusing existing inference engine (config hash: 2acc9e30)
+2025-12-30 22:29:33 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 22:29:33 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 22:29:33 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 22:29:35 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 22:29:35 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 22:29:35 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 22:29:35 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 22:34:08 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 3 completed shard 1 (56 batches, 272.84s)
+2025-12-30 22:34:08 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 1 (56 batches)
+2025-12-30 22:34:08 | QueryProcessingActor-0 | INFO | query_actor.py:143 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Reusing existing inference engine (config hash: 2acc9e30)
+2025-12-30 22:34:08 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 22:34:08 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 22:34:08 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 22:34:09 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 22:34:09 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 22:34:09 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 22:34:09 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 22:39:34 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 4 completed shard 1 (56 batches, 324.90s)
+2025-12-30 22:39:34 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 2 (56 batches)
+2025-12-30 22:39:34 | QueryProcessingActor-0 | INFO | query_actor.py:143 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Reusing existing inference engine (config hash: 2acc9e30)
+2025-12-30 22:39:34 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 22:39:34 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 22:39:34 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 22:39:36 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 22:39:36 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 22:39:36 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 22:39:36 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 22:44:05 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 1 completed shard 2 (56 batches, 268.83s)
+2025-12-30 22:44:05 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 2 (56 batches)
+2025-12-30 22:44:05 | QueryProcessingActor-0 | INFO | query_actor.py:143 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Reusing existing inference engine (config hash: 2acc9e30)
+2025-12-30 22:44:05 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 22:44:05 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 22:44:05 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 22:44:07 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 22:44:07 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 22:44:07 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 22:44:07 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 22:49:17 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 2 completed shard 2 (56 batches, 309.98s)
+2025-12-30 22:49:17 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 2 (56 batches)
+2025-12-30 22:49:17 | QueryProcessingActor-0 | INFO | query_actor.py:143 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Reusing existing inference engine (config hash: 2acc9e30)
+2025-12-30 22:49:17 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 22:49:17 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 22:49:17 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 22:49:19 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 22:49:19 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 22:49:19 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 22:49:19 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 22:53:51 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 3 completed shard 2 (56 batches, 271.85s)
+2025-12-30 22:53:51 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 2 (56 batches)
+2025-12-30 22:53:51 | QueryProcessingActor-0 | INFO | query_actor.py:143 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Reusing existing inference engine (config hash: 2acc9e30)
+2025-12-30 22:53:51 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 22:53:51 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 22:53:51 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 22:53:52 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 22:53:52 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 22:53:52 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 22:53:52 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 22:59:02 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 4 completed shard 2 (56 batches, 309.43s)
+2025-12-30 22:59:02 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 3 (56 batches)
+2025-12-30 22:59:02 | QueryProcessingActor-0 | INFO | query_actor.py:143 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Reusing existing inference engine (config hash: 2acc9e30)
+2025-12-30 22:59:02 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 22:59:02 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 22:59:02 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 22:59:04 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 22:59:04 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 22:59:04 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 22:59:04 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 23:03:35 | Controller | INFO | controller.py:951 | [exp1-fiqa-rag-colab:Controller] Pipeline 1 completed all 4 shards
+2025-12-30 23:03:35 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 1 completed shard 3 (56 batches, 271.33s)
+2025-12-30 23:03:35 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 3 (56 batches)
+2025-12-30 23:03:35 | QueryProcessingActor-0 | INFO | query_actor.py:143 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Reusing existing inference engine (config hash: 2acc9e30)
+2025-12-30 23:03:35 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 23:03:35 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 23:03:35 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 23:03:37 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 23:03:37 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 23:03:37 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 23:03:37 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 23:08:30 | Controller | INFO | controller.py:951 | [exp1-fiqa-rag-colab:Controller] Pipeline 2 completed all 4 shards
+2025-12-30 23:08:30 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 2 completed shard 3 (56 batches, 292.83s)
+2025-12-30 23:08:30 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 3 (56 batches)
+2025-12-30 23:08:30 | QueryProcessingActor-0 | INFO | query_actor.py:143 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Reusing existing inference engine (config hash: 2acc9e30)
+2025-12-30 23:08:30 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 23:08:30 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 23:08:30 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 23:08:32 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 23:08:32 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 23:08:32 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 23:08:32 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 23:13:14 | Controller | INFO | controller.py:951 | [exp1-fiqa-rag-colab:Controller] Pipeline 3 completed all 4 shards
+2025-12-30 23:13:14 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 3 completed shard 3 (56 batches, 281.84s)
+2025-12-30 23:13:14 | Controller | INFO | controller.py:1105 | [exp1-fiqa-rag-colab:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 3 (56 batches)
+2025-12-30 23:13:14 | QueryProcessingActor-0 | INFO | query_actor.py:143 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Reusing existing inference engine (config hash: 2acc9e30)
+2025-12-30 23:13:14 | QueryProcessingActor-0 | INFO | query_actor.py:162 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2025-12-30 23:13:14 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2025-12-30 23:13:14 | sentence_transformers.SentenceTransformer | INFO | SentenceTransformer.py:227 | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-30 23:13:15 | QueryProcessingActor-0 | INFO | query_actor.py:178 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated embedding function: HuggingFaceEmbeddings
+2025-12-30 23:13:15 | QueryProcessingActor-0 | INFO | query_actor.py:187 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2025-12-30 23:13:15 | QueryProcessingActor-0 | INFO | query_actor.py:196 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2025-12-30 23:13:15 | QueryProcessingActor-0 | INFO | query_actor.py:218 | [exp1-fiqa-rag-colab:QueryProcessingActor-0] Recreated RAG spec with retriever and template
+2025-12-30 23:18:42 | Controller | INFO | controller.py:951 | [exp1-fiqa-rag-colab:Controller] Pipeline 4 completed all 4 shards
+2025-12-30 23:18:43 | Controller | INFO | controller.py:1003 | [exp1-fiqa-rag-colab:Controller] Pipeline 4 completed shard 3 (56 batches, 326.90s)
+2025-12-30 23:18:43 | Controller | INFO | controller.py:1069 | [exp1-fiqa-rag-colab:Controller] All pipelines completed all shards!
+2025-12-30 23:18:43 | Controller | INFO | controller.py:534 | [exp1-fiqa-rag-colab:Controller] Computing final metrics for all pipelines...
+2025-12-30 23:18:43 | Controller | INFO | controller.py:639 | [exp1-fiqa-rag-colab:Controller] Pipeline 1 (Pipeline 1) completed successfully
+2025-12-30 23:18:43 | Controller | INFO | controller.py:639 | [exp1-fiqa-rag-colab:Controller] Pipeline 2 (Pipeline 2) completed successfully
+2025-12-30 23:18:43 | Controller | INFO | controller.py:639 | [exp1-fiqa-rag-colab:Controller] Pipeline 3 (Pipeline 3) completed successfully
+2025-12-30 23:18:43 | Controller | INFO | controller.py:639 | [exp1-fiqa-rag-colab:Controller] Pipeline 4 (Pipeline 4) completed successfully
+2025-12-30 23:19:44 | ExperimentUtils | INFO | experiment_utils.py:179 | [exp1-fiqa-rag-colab:ExperimentUtils] Reset experiment states - marked ongoing pipelines, contexts, and tasks as failed
+2025-12-30 23:19:44 | ExperimentUtils | INFO | experiment_utils.py:187 | [exp1-fiqa-rag-colab:ExperimentUtils] Experiment marked as cancelled. Ongoing pipelines, contexts, and tasks have been marked as failed.
+2025-12-30 23:19:44 | ExperimentUtils | INFO | experiment_utils.py:153 | [exp1-fiqa-rag-colab:ExperimentUtils] Experiment exp1-fiqa-rag-colab ended
+2025-12-30 23:19:45 | Experiment | INFO | experiment.py:536 | [exp1-fiqa-rag-colab:Experiment] All actors shut down
+2025-12-30 23:19:45 | Experiment | INFO | experiment.py:537 | [exp1-fiqa-rag-colab:Experiment] Dispatcher will automatically shut down (daemon thread)
