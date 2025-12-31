@@ -1,6 +1,6 @@
 # RAG Training with RapidFireAI on FiQA Dataset
 
-**Notebook:** https://colab.research.google.com/…  
+**Notebook:** (https://colab.research.google.com/drive/1dZqV2osju1Q2xMQiQszst7eECwqrou36?usp=sharing) 
 
 This project builds a Retrieval-Augmented Generation (RAG) system using the FiQA (Financial Question Answering) dataset and evaluates retrieval quality across multiple pipeline configurations with RapidFireAI.
 
