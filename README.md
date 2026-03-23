@@ -51,6 +51,8 @@ The following parameters were varied:
 | 200   | 60      | 2     | 1     | 0.645|
 | 200   | 60      | 2     | 2     | 0.645|
 
+<img width="642" height="483" alt="image" src="https://github.com/user-attachments/assets/147a53d0-41c8-473e-bdc6-6d80eacc2d46" />
+
 ---
 
 ## Takeaways
